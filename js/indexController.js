@@ -10,6 +10,7 @@ var IndexController = (function(){
       $('.modal').modal();
       $('.parallax').parallax();
       $('.materialboxed').materialbox();
+      $('.scrollspy').scrollSpy();
     };
 
     var start = function(){
