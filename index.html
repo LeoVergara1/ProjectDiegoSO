@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="css/myCss.css">
   </head>
   <body>
+    <div class="navbar-fixed">
       <nav class="white" role="navigation">
           <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="brand-logo"><img id="logoImg" src="images/cecytem.png" alt=""></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#">Navbar Link</a></li>
+              <li><a href="#" class="black-text">Acerca de nosotros</a></li>
             </ul>
       
             <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
-              <li><a href="#">Navbar Link</a></li>
+              <li><a href="#" class="black-text">Más información</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
           </div>
         </nav>
+    </div>
         <div id="index-banner" class="parallax-container">
             <div class="section no-pad-bot">
               <div class="container">
@@ -37,14 +39,75 @@
             </div>
             <div class="parallax"><img src="images/code.png" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 217px, 0px);"></div>
           </div>
+          <div class="section white">
+            <div class="row container">
+              <div class="col s12 m4">
+                <div class="card">
+                  <div class="card-image">
+                    <a class="modal-trigger" href="#modal1"><img src="images/accion.png"></a>
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <button data-target="modal1" class="btn modal-trigger">Modal</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4">
+                <div class="card">
+                  <div class="card-image">
+                    <a class="modal-trigger" href="#modal1"><img src="images/accion.png"></a>
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <button data-target="modal1" class="btn modal-trigger">Modal</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div id="index-banner2" class="parallax-container">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <br><br>
+                <h1 class="header center teal-text text-lighten-2">Proyecto para el equipo de diego</h1>
+                <div class="row center">
+                  <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                </div>
+                <div class="row center">
+                  <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                </div>
+                <br><br>
+        
+              </div>
+            </div>
+            <div class="parallax"><img src="images/code.png" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 217px, 0px);"></div>
+          </div>
+          <!--Modales -->
+            <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+          
   </body>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/materialize.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    $('.parallax').parallax();
-  });
-  </script>
+  <script src="js/indexController.js"></script>
 </html>
 
 
