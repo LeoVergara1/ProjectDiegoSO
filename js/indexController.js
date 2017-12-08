@@ -9,6 +9,7 @@ var IndexController = (function(){
       console.log("Satrt bindEvents");
       $('.modal').modal();
       $('.parallax').parallax();
+      $('.materialboxed').materialbox();
     };
 
     var start = function(){
